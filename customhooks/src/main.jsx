@@ -1,8 +1,10 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import UseOnline from './components/useOnline'
-
+import Test from "./store/test"
+import { RecoilRoot } from 'recoil'
 
 createRoot(document.getElementById('root')).render(
-    <UseOnline />
+    <RecoilRoot>
+    <Test />
+    </RecoilRoot>
 )
